@@ -26,25 +26,8 @@ export default class MobileCenterTester extends Component {
     this.state = {
       loading: true,
       viewContent: [
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
-        { title: "TITLE", text: "TEXT", type: CONST.ANALYTIC },
+        { title: "Console", text: "launched", type: CONST.ANALYTIC },
+        
       ],
     };
   }
