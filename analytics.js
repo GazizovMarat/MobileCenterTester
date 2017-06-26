@@ -110,7 +110,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent("Test event3", {
                     "Music2": "test prop",
-                    "Music": "abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha"
+                    "abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha":"Music"
                 });
             }
         },
@@ -126,7 +126,7 @@ export class AnalyticTests extends Component {
         {
             testId: 20,
             handler: () => {
-                for (let i = 0; i <= 201; i++) {
+                for (let i = 0; i <= 210; i++) {
                     AnalyticService.trackEvent("Test event" + i);
                 }
 
@@ -135,7 +135,7 @@ export class AnalyticTests extends Component {
         {
             testId: 21,
             handler: () => {
-                AnalyticService.trackEvent("Test event7", {
+                AnalyticService.trackEvent("Test event6", {
                     "!@#$%^&*()?><,.\']}~`": "Music"
                 });
             }
@@ -143,7 +143,7 @@ export class AnalyticTests extends Component {
         {
             testId: 22,
             handler: () => {
-                AnalyticService.trackEvent("Test event6", {
+                AnalyticService.trackEvent("Test event7", {
                     "Music": "!@#$%^&*()?><,.\']}~`"
                 });
             }
