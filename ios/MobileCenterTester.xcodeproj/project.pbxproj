@@ -22,6 +22,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		24D1D51A1F02B0A200A675BF /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 24D1D5191F02B0A200A675BF /* Glass.aiff */; };
+		24D1D53B1F02B7C300A675BF /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D1D53A1F02B7C300A675BF /* img.png */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -34,6 +36,7 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* MobileCenterTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MobileCenterTesterTests.m */; };
+		2FE83762EBC54A28AC23FFF0 /* libRNPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28434E2B55984678BA9B696A /* libRNPush.a */; };
 		3C60E3E14AED4036894BC928 /* libPods-MobileCenterTester-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5370DDD52D6E88FC5B05A06B /* libPods-MobileCenterTester-tvOS.a */; };
 		3F0E099FB329BC168B63DCEC /* libPods-MobileCenterTesterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044F300A1D706E729E287BF /* libPods-MobileCenterTesterTests.a */; };
 		49068351DCEA4883B5689EBB /* MobileCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59B0250F71D54D5DAE0A4D1C /* MobileCenter-Config.plist */; };
@@ -128,6 +131,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 548694001D8384E600E6685A;
 			remoteInfo = RNAnalytics;
+		};
+		24D1D4E31F02688700A675BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C9C8B2FE964250B6F1B6A4 /* RNPush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA189FAA1EEE74F100CAD13F;
+			remoteInfo = RNPush;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -280,6 +290,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MobileCenterTester/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		164B9213AD85B1A0171D61B9 /* Pods-MobileCenterTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTester/Pods-MobileCenterTester.debug.xcconfig"; sourceTree = "<group>"; };
+		24D1D4B71F0267BC00A675BF /* MobileCenterTester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MobileCenterTester.entitlements; path = MobileCenterTester/MobileCenterTester.entitlements; sourceTree = "<group>"; };
+		24D1D5191F02B0A200A675BF /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
+		24D1D53A1F02B7C300A675BF /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		28434E2B55984678BA9B696A /* libRNPush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPush.a; sourceTree = "<group>"; };
 		28E97B6A369243B8ED045173 /* Pods-MobileCenterTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTesterTests/Pods-MobileCenterTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* MobileCenterTester-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobileCenterTester-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* MobileCenterTester-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MobileCenterTester-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +305,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		84C9C8B2FE964250B6F1B6A4 /* RNPush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPush.xcodeproj; path = "../node_modules/mobile-center-push/ios/RNPush.xcodeproj"; sourceTree = "<group>"; };
 		892D6E9B4700F3AD17CF7947 /* libPods-MobileCenterTester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileCenterTester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8712A3A510EBFD444F41149 /* Pods-MobileCenterTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTester.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTester/Pods-MobileCenterTester.release.xcconfig"; sourceTree = "<group>"; };
 		C3CC9FB1E63D8F4F366DB15F /* Pods-MobileCenterTester-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTester-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTester-tvOS/Pods-MobileCenterTester-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +341,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				FC867B81C6A74A61BE6BCD4F /* libRNAnalytics.a in Frameworks */,
 				F7DF4CF2A3FF5B07F1F94E2E /* libPods-MobileCenterTester.a in Frameworks */,
+				2FE83762EBC54A28AC23FFF0 /* libRNPush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +452,9 @@
 		13B07FAE1A68108700A75B9A /* MobileCenterTester */ = {
 			isa = PBXGroup;
 			children = (
+				24D1D5191F02B0A200A675BF /* Glass.aiff */,
+				24D1D53A1F02B7C300A675BF /* img.png */,
+				24D1D4B71F0267BC00A675BF /* MobileCenterTester.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -468,6 +487,14 @@
 			isa = PBXGroup;
 			children = (
 				243E917C1F01514C0023D72E /* libRNAnalytics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D1D4C41F02688700A675BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D1D4E41F02688700A675BF /* libRNPush.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -520,6 +547,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				2E538F2456A54CD4BF07B87A /* RNAnalytics.xcodeproj */,
+				84C9C8B2FE964250B6F1B6A4 /* RNPush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -672,6 +700,11 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 285W24646W;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -743,6 +776,10 @@
 				{
 					ProductGroup = 243E91591F01514C0023D72E /* Products */;
 					ProjectRef = 2E538F2456A54CD4BF07B87A /* RNAnalytics.xcodeproj */;
+				},
+				{
+					ProductGroup = 24D1D4C41F02688700A675BF /* Products */;
+					ProjectRef = 84C9C8B2FE964250B6F1B6A4 /* RNPush.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -831,6 +868,13 @@
 			fileType = archive.ar;
 			path = libRNAnalytics.a;
 			remoteRef = 243E917B1F01514C0023D72E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24D1D4E41F02688700A675BF /* libRNPush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNPush.a;
+			remoteRef = 24D1D4E31F02688700A675BF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -966,6 +1010,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D1D53B1F02B7C300A675BF /* img.png in Resources */,
+				24D1D51A1F02B0A200A675BF /* Glass.aiff in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				49068351DCEA4883B5689EBB /* MobileCenter-Config.plist in Resources */,
@@ -1275,12 +1321,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
+					"$(SRCROOT)/../node_modules/mobile-center-push/ios/RNPush",
 				);
 				INFOPLIST_FILE = MobileCenterTesterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1301,12 +1349,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
+					"$(SRCROOT)/../node_modules/mobile-center-push/ios/RNPush",
 				);
 				INFOPLIST_FILE = MobileCenterTesterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1323,12 +1373,14 @@
 			baseConfigurationReference = 164B9213AD85B1A0171D61B9 /* Pods-MobileCenterTester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MobileCenterTester/MobileCenterTester.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 285W24646W;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
+					"$(SRCROOT)/../node_modules/mobile-center-push/ios/RNPush",
 				);
 				INFOPLIST_FILE = MobileCenterTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1347,11 +1399,13 @@
 			baseConfigurationReference = B8712A3A510EBFD444F41149 /* Pods-MobileCenterTester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MobileCenterTester/MobileCenterTester.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 285W24646W;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
+					"$(SRCROOT)/../node_modules/mobile-center-push/ios/RNPush",
 				);
 				INFOPLIST_FILE = MobileCenterTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1381,11 +1435,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
+					"$(SRCROOT)/../node_modules/mobile-center-push/ios/RNPush",
 				);
 				INFOPLIST_FILE = "MobileCenterTester-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1416,11 +1472,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
+					"$(SRCROOT)/../node_modules/mobile-center-push/ios/RNPush",
 				);
 				INFOPLIST_FILE = "MobileCenterTester-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1452,6 +1510,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.MobileCenterTester-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1477,6 +1536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.MobileCenterTester-tvOSTests";

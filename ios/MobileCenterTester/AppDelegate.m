@@ -8,6 +8,8 @@
  */
 
 #import "AppDelegate.h"
+#import <RNPush/RNPush.h>
+
 #import <RNAnalytics/RNAnalytics.h>
 
 
@@ -19,6 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+
+  [RNPush registerAndEnable];  // Initialize Mobile Center push
 
   [RNAnalytics registerWithInitiallyEnabled:true];  // Initialize Mobile Center analytics
 

@@ -6,8 +6,9 @@ target 'MobileCenterTester' do
   # use_frameworks!
 
   # Pods for MobileCenter
-  pod 'RNMobileCenter', '~> 0.4.0'
-  pod 'MobileCenter', '~> 0.6.0'
+  pod 'MobileCenter/MobileCenterPush'#, '~> 0.9.0'
+  pod 'RNMobileCenter' #, '~> 0.4.0'
+  pod 'MobileCenter' #, '~> 0.6.0'
 
   
 
