@@ -18,6 +18,8 @@ import {
 import * as CONST from './const';
 import * as STYLES from './styles';
 import {AnalyticTests} from './analytics';
+import Push from "mobile-center-push";
+
 
 export class MobileCenterTester extends Component {
 
@@ -26,7 +28,7 @@ export class MobileCenterTester extends Component {
     this.state = {
       loading: true,
       viewContent: [
-        { title: "Console", text: "launched", type: CONST.ANALYTIC },
+        { title: "Console", text: "launched", type: CONST.OTHER },
         
       ],
     };
@@ -35,7 +37,23 @@ export class MobileCenterTester extends Component {
     this.state.viewContent.unshift({ title: title, text: text, type: type })
     this.setState({ loading: !this.state.loading })
   }
+  async pusEnable(){
+    Push.isEnabled()
+    .then((obj)=>{
+      this.unshiftLog("PushEnabled", obj, CONST.PUSH);
+    }
+
+    ).catch((err)=>{
+      this.unshiftLog("PushDisabled", err, CONST.PUSH);
+    });
+  }
   render() {
+    //this.pusEnable();
+    //if(pushEnable == true){
+    //  this.unshiftLog("Push", "Enabled", CONST.PUSH);
+    //}else{
+    //  this.unshiftLog("Push", "Disabled", CONST.PUSH);
+    //}
     log = [];
     this.state.viewContent.forEach((item) => {
       log.push(
