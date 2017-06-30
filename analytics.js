@@ -32,7 +32,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent("Test event1")
                     .then((obj) => {
-                        this.logger("Analytics-16", "Test event 1", CONST.ANALYTIC);
+                        this.logger("Analytics-16", "Name: Test event 1", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-16", err, CONST.ANALYTIC);
@@ -44,7 +44,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent("Test event2")
                     .then((obj) => {
-                        this.logger("Analytics-17", "Test event 2", CONST.ANALYTIC);
+                        this.logger("Analytics-17", "Name: Test event 2", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-17", err, CONST.ANALYTIC);
@@ -55,11 +55,10 @@ export class AnalyticTests extends Component {
             testId: 18,
             handler: () => {
                 AnalyticService.trackEvent("Test event3", {
-                    "Music2": "test prop",
                     "abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha": "Music"
                 })
                     .then((obj) => {
-                        this.logger("Analytics-18", "Test event 3", CONST.ANALYTIC);
+                        this.logger("Analytics-18", "Name: Test event 3:\n\rProperties:\n\rabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha :Music", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-18", err, CONST.ANALYTIC);
@@ -70,11 +69,10 @@ export class AnalyticTests extends Component {
             testId: 19,
             handler: () => {
                 AnalyticService.trackEvent("Test event4", {
-                    "Music2": "test prop",
                     "Music": "abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha"
                 })
                     .then((obj) => {
-                        this.logger("Analytics-19", "Test event 4", CONST.ANALYTIC);
+                        this.logger("Analytics-19", "Name: Test event 4\n\rProperties:\n\rMusic : abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-19", err, CONST.ANALYTIC);
@@ -103,7 +101,7 @@ export class AnalyticTests extends Component {
                     "!@#$%^&*()?><,.\']}~`": "Music"
                 })
                     .then((obj) => {
-                        this.logger("Analytics-21", "Test event 6", CONST.ANALYTIC);
+                        this.logger("Analytics-21", "Name: Test event 6\n\rProperties:\n\r!@#$%^&*()?><,.\']}~`:Music", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-21", err, CONST.ANALYTIC);
@@ -117,7 +115,7 @@ export class AnalyticTests extends Component {
                     "Music": "!@#$%^&*()?><,.\']}~`"
                 })
                     .then((obj) => {
-                        this.logger("Analytics-22", "Test event 7", CONST.ANALYTIC);
+                        this.logger("Analytics-22", "Name: Test event 7\n\rProperties:\n\rMusic:!@#$%^&*()?><,.\']}~`", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-22", err, CONST.ANALYTIC);
@@ -129,7 +127,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent("!@#$%^&*()?><,.\']}~`")
                     .then((obj) => {
-                        this.logger("Analytics-23", "Test event !@#$%^&*()?><,.\']}~`", CONST.ANALYTIC);
+                        this.logger("Analytics-23", "Name: !@#$%^&*()?><,.\']}~`", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-23", err, CONST.ANALYTIC);
@@ -141,7 +139,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent(null)
                     .then((obj) => {
-                        this.logger("Analytics-24", "Test event null", CONST.ANALYTIC);
+                        this.logger("Analytics-24", "Name: null", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-24", err, CONST.ANALYTIC);
@@ -153,7 +151,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent("abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgha")
                     .then((obj) => {
-                        this.logger("Analytics-25", "Test event acbc...caca", CONST.ANALYTIC);
+                        this.logger("Analytics-25", "Name: acbc...caca (257 chars)", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-25", err, CONST.ANALYTIC);
@@ -165,7 +163,7 @@ export class AnalyticTests extends Component {
             handler: () => {
                 AnalyticService.trackEvent("")
                     .then((obj) => {
-                        this.logger("Analytics-26", "Test event empty string", CONST.ANALYTIC);
+                        this.logger("Analytics-26", "Name: empty string", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-26", err, CONST.ANALYTIC);
@@ -184,7 +182,7 @@ export class AnalyticTests extends Component {
                     "Category6": "FileName6"
                 })
                     .then((obj) => {
-                        this.logger("Analytics-27", "Test event 8", CONST.ANALYTIC);
+                        this.logger("Analytics-27", "Name: Test event 8\n\rProperties:\n\rCategory1:FileName1 ... Category6:FileName6", CONST.ANALYTIC);
                     })
                     .catch((err) => {
                         his.logger("[Ex]Analytics-27", err, CONST.ANALYTIC);

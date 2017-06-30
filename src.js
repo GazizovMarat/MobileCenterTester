@@ -48,14 +48,15 @@ export class MobileCenterTester extends Component {
       log.push(
         <Text>
           <Text style={{ fontSize: 14, color: "#00cc00" }}>
-            {item.title} {" - "}
             <Text style={{ color: "#ffd500" }}>{item.timeOn}</Text>
+            {" - "}
+            {item.title}
           </Text>
+          {"\n\r"}
+          <Text style={{ fontSize: 12, color: "#006600" }}>{item.text}</Text>
+          {"\n\r"}
         </Text>
       );
-      log.push(
-        <Text style={{ fontSize: 12, color: "#006600" }}>{item.text}</Text>
-      )
     })
     return (
       <View style={STYLES.styles.container}>
