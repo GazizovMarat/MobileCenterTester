@@ -17,8 +17,9 @@ import {
 } from 'react-native';
 import * as CONST from './const';
 import * as STYLES from './styles';
-import {AnalyticTests} from './analytics';
+import { AnalyticTests } from './analytics';
 import Push from "mobile-center-push";
+import Moment from 'moment'
 
 
 export class MobileCenterTester extends Component {
@@ -27,37 +28,30 @@ export class MobileCenterTester extends Component {
     super(props);
     this.state = {
       loading: true,
-      viewContent: [
-        { title: "Console", text: "launched", type: CONST.OTHER },
-        
+      log: [
+        {
+          title: "Console",
+          text: "launched",
+          type: CONST.OTHER,
+          timeOn: Moment().format('lll')
+        },
       ],
     };
   }
-  unshiftLog(title, text, type) {
-    this.state.viewContent.unshift({ title: title, text: text, type: type })
+  logger(title, text, type) {
+    this.state.log.unshift({ title: title, text: text, type: type, timeOn: Moment().format('lll') })
     this.setState({ loading: !this.state.loading })
   }
-  async pusEnable(){
-    Push.isEnabled()
-    .then((obj)=>{
-      this.unshiftLog("PushEnabled", obj, CONST.PUSH);
-    }
-
-    ).catch((err)=>{
-      this.unshiftLog("PushDisabled", err, CONST.PUSH);
-    });
-  }
   render() {
-    //this.pusEnable();
-    //if(pushEnable == true){
-    //  this.unshiftLog("Push", "Enabled", CONST.PUSH);
-    //}else{
-    //  this.unshiftLog("Push", "Disabled", CONST.PUSH);
-    //}
     log = [];
-    this.state.viewContent.forEach((item) => {
+    this.state.log.forEach((item) => {
       log.push(
-        <Text style={{ fontSize: 14, color: "#00cc00" }}> <Text style={{ color: "#ff3300" }}>¶</Text> {item.title}</Text>
+        <Text>
+          <Text style={{ fontSize: 14, color: "#00cc00" }}>
+            {item.title} {" - "}
+            <Text style={{ color: "#ffd500" }}>{item.timeOn}</Text>
+          </Text>
+        </Text>
       );
       log.push(
         <Text style={{ fontSize: 12, color: "#006600" }}>{item.text}</Text>
@@ -81,7 +75,7 @@ export class MobileCenterTester extends Component {
         }}>
           {log}
         </ScrollView>
-        <AnalyticTests logger={this.unshiftLog.bind(this)} />
+        <AnalyticTests logger={this.logger.bind(this)} />
       </View>
     );
   }
