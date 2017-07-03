@@ -18,6 +18,7 @@ import {
 import * as CONST from './const';
 import * as STYLES from './styles';
 import { AnalyticTests } from './analytics';
+import { PushService } from './push';
 import Push from "mobile-center-push";
 import Moment from 'moment'
 
@@ -38,6 +39,7 @@ export class MobileCenterTester extends Component {
       ],
     };
   }
+  pushService = new PushService(this.logger.bind(this));
   logger(title, text, type) {
     this.state.log.unshift({ title: title, text: text, type: type, timeOn: Moment().format('lll') })
     this.setState({ loading: !this.state.loading })
