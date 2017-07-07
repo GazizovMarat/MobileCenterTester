@@ -1,9 +1,6 @@
 import Push from 'mobile-center-push'
 import { AppState, Alert } from 'react-native'
 
-//It doesn't work, because a last changes was not added into the npm store.
-//You should wait when it will have done, then you can update node packages to actual version via npm.
-
 export class PushService  {
     constructor(logger) {
         this.state = {
